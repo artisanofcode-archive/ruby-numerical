@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require "numerical"
+
+if ARGV.count < 2 or not [ '-e', '-d' ].include? ARGV[0]
+  puts "usage: numerical [ -e | -d ] value"
+  puts ""
+  puts "options:"
+  puts "    -e  encode a numeric value into words"
+  puts "    -d  decode a numeric value from words"
+  exit(1)
+end
+
+if ARGV.shift == '-e'
+  puts Numerical.encode(ARGV.shift.to_i)
+else
+  puts Numerical.decode(ARGV.join(' '))
+end

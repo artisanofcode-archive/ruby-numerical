@@ -166,9 +166,10 @@ describe Numerical do
       Numerical.decode("five hundred fifty three vigintillion nine hundred twenty novemdecillion twenty five").should == 553_920_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_025
     end
 
-    it "should throw an error for invalid numbers" do
-      lambda { Numerical.decode('one zillion') }.should raise_error
-      lambda { Numerical.decode('twenty gazillion three hundred thousand') }.should raise_error
+    it "should return nil for invalid numbers" do
+      Numerical.decode('one zillion').should == nil
+      Numerical.decode('twenty gazillion three hundred thousand').should == nil
+      Numerical.decode('foobar').should == nil
     end
 
     it "should allow some words" do
