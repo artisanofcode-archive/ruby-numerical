@@ -1,0 +1,5 @@
+syntax: glob
+*.gem
+Gemfile.lock
+vendor
+.bundle
