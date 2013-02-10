@@ -20,6 +20,10 @@ or
 
 ## History
 
+### 0.0.2
+
+Decomposing into encoder and decoder classes
+
 ### 0.0.1
 
 Initial Release
