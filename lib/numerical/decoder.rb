@@ -29,5 +29,4 @@ module Numerical
       result += current
     end
   end
-
 end
