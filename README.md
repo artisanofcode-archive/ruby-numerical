@@ -12,10 +12,6 @@ To install Artisan Numerical via gem:
 
 To install from source:
 
-    hg clone https://bitbucket.org/artisanofcode/ruby-numerical
-
-or
-
     git clone git://github.com/artisanofcode/ruby-numerical.git
 
 ## History
